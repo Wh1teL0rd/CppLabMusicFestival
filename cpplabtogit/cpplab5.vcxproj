@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{80691bbd-829a-4043-b840-b25b021c661a}</ProjectGuid>
-    <RootNamespace>cpplabtogit</RootNamespace>
+    <ProjectGuid>{6f05d9cd-681a-4e1f-b74a-32f268314faa}</ProjectGuid>
+    <RootNamespace>cpplab5</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cpplabtogit.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MuscicFestival.cpp" />
+    <ClCompile Include="Musician.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MuscicFestival.h" />
+    <ClInclude Include="Musician.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
