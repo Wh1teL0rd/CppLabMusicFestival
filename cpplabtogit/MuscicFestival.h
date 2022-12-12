@@ -6,12 +6,12 @@ class MusicFestival
 {
 public:
 	vector<Musician> musicians;
-	int BudgetOfFestival;
-	int BudgetUsed = 0;
+	int budget_of_festival;
+	int budget_used = 0;
 
 	MusicFestival();
-	MusicFestival(int valueBudget, vector<Musician> vMusicians);
+	MusicFestival(int value_budget, vector<Musician> value_musicians);
 
-	void AddMusician(Musician valueNewMusician);
+	void AddMusician(Musician value_new_musician);
 	void RemoveMusician();
 };

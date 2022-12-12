@@ -1,15 +1,16 @@
 #include <string>
+
 using namespace std;
 
 class Musician
 {
 public:
-	string Name;
-	int Price;
-	int Age;
+	string name;
+	int price;
+	int age;
 
 	Musician();
-	Musician(string valueName, int valuePrice, int valueAge);
+	Musician(string value_name, int value_price, int value_age);
 
 	~Musician();
 };

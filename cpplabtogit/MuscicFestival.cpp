@@ -4,44 +4,44 @@
 
 MusicFestival::MusicFestival()
 {
-	BudgetOfFestival = 10000;
+	budget_of_festival = 10000;
 }
 
-MusicFestival::MusicFestival(int valueBudget, vector<Musician> vMusicians)
+MusicFestival::MusicFestival(int value_budget, vector<Musician> value_musicians)
 {
-	BudgetOfFestival = valueBudget;
+	budget_of_festival = value_budget;
 	
-	for(int i = 0; i < vMusicians.size(); i++)
+	for(int i = 0; i < value_musicians.size(); i++)
 	{
-		BudgetUsed+=vMusicians[i].Price;
+		budget_used+=value_musicians[i].price;
 
-		if(BudgetUsed>BudgetOfFestival)
+		if(budget_used>budget_of_festival)
 		{
-			BudgetUsed -= vMusicians[i].Price;
-			cout << vMusicians[i].Name << " SO EXPENSIVE" << endl;
+			budget_used -= value_musicians[i].price;
+			cout << value_musicians[i].name << " SO EXPENSIVE" << endl;
 		}
 		else
 		{
-			musicians.push_back(vMusicians[i]);
+			musicians.push_back(value_musicians[i]);
 		}
 	}
 }
 
-void MusicFestival::AddMusician(Musician valueNewMusician)
+void MusicFestival::AddMusician(Musician value_new_musician)
 {
-	if(BudgetUsed + valueNewMusician.Price < BudgetOfFestival)
+	if(budget_used + value_new_musician.price < budget_of_festival)
 	{
-		BudgetUsed += valueNewMusician.Price;
-		musicians.push_back(valueNewMusician);
+		budget_used += value_new_musician.price;
+		musicians.push_back(value_new_musician);
 	}
 	else
 	{
-		cout << valueNewMusician.Name << " SO EXPENSIVE" << endl;
+		cout << value_new_musician.name << " SO EXPENSIVE" << endl;
 	}
 }
 
 void MusicFestival::RemoveMusician()
 {
-	BudgetUsed -= musicians.back().Price;
+	budget_used -= musicians.back().price;
 	musicians.pop_back();
 }

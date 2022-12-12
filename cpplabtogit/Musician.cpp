@@ -1,19 +1,20 @@
-#include "Musician.h"
 #include <string>
 #include <iostream>
 
+#include "Musician.h"
+
 Musician::Musician()
 {
-	Name = "NoName";
-	Price = 3000;
-	Age = 18;
+	name = "NoName";
+	price = 3000;
+	age = 18;
 }
 
-Musician::Musician(string valueName, int valuePrice, int valueAge)
+Musician::Musician(string value_name, int value_price, int value_age)
 {
-	Name = valueName;
-	Price = valuePrice;
-	Age = valueAge;
+	name = value_name;
+	price = value_price;
+	age = value_age;
 }
 
 Musician::~Musician()
