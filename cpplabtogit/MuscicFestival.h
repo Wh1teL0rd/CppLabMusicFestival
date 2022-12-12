@@ -1,5 +1,7 @@
-#include "Musician.h"
 #include <vector>
+
+#include "Musician.h"
+
 using namespace std;
 
 class MusicFestival
